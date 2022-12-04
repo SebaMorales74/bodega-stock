@@ -1,0 +1,30 @@
+@use '../../main';
+
+header.ant-layout-header,
+header>ul.ant-menu {
+    @include main.colorFondo;
+}
+
+.ant-menu-submenu-title,
+.ant-menu-submenu-title:hover {
+    @include main.tituloSider;
+}
+
+.ant-menu-item-selected{
+    background-color: #fff !important;
+    color: #333a42 !important;
+}
+
+.ant-menu-item {
+    :hover {
+        color: rgba(255, 255, 255, 0.5) !important;
+    }
+}
+
+.ant-menu {
+    @include main.colorFondo;
+}
+
+.plantilla {
+    height: 100vh;
+}
