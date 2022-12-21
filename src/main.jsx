@@ -1,24 +1,49 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { ConfigProvider } from 'antd'
+import { ConfigProvider, Result } from 'antd'
 
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
 
+import Home from './Home';
+import Login from './Login';
 
-import Plantilla from './components/Plantilla';
+import './_main.scss';
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <Plantilla />
+    path: "/login",
+    element: <Login />
   },
   {
-    path: "about",
-    element: <div>About</div>,
+    path: "*",
+    element: <Result
+    status="404"
+    title="404"
+    subTitle="Lo siento, esta pagina no existe."/>
   },
+  {
+    path: "/",
+    element: <Home />
+  },
+  {
+    path: "/compras",
+    element: <Home />
+  },
+  {
+    path: "/ventas",
+    element: <Home />
+  },
+  {
+    path: "/inventario",
+    element: <Home />
+  },
+  {
+    path: "/historico",
+    element: <Home />
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

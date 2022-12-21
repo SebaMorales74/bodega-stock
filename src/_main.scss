@@ -8,15 +8,6 @@ body {
     margin: 0px;
 }
 
-@mixin colorFondo {
-    background-color: $primary !important;
-    color: #fff !important;
-}
-
-@mixin tituloSider {
-    background-color: $primary !important;
-    color: #fff !important;
-    :hover {
-        color: rgba(255, 255, 255, 0.5) !important;
-    }
+@mixin destacar {
+    color: #20a3e0;
 }

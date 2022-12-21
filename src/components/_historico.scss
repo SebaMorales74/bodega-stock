@@ -1,0 +1,23 @@
+.site-layout .site-layout-background {
+    background: #fff;
+}
+
+.site-calendar-demo-card {
+    width: 600px;
+    border: 1px solid #f0f0f0;
+    border-radius: 2px;
+}
+
+.space-align-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-self: center;
+    text-align: center;
+}
+
+.space-align-block {
+    flex: none;
+    margin: 8px 4px;
+    padding: 4px;
+}

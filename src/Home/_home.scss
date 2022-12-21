@@ -1,0 +1,29 @@
+@use "src/main" as main;
+
+.menu{
+    text-align: center;
+    vertical-align: center;
+}
+
+.menuItem{
+    height: 35vh;
+    .icono{
+        height: 20vh;
+        width: 80%;
+        transition: all 0.5s ease-in-out;
+    }
+    .descripcion{
+        transition: all 0.5s ease-in-out;
+    }
+}
+
+.menuItem:hover{
+    .icono{
+        transform: scale(1.1);
+        transition: all 0.5s ease-in-out;
+    }
+    .descripcion{
+        @include main.destacar;
+        transition: all 0.5s ease-in-out;
+    }
+}
